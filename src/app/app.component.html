@@ -1,0 +1,324 @@
+<section class="navbar">
+  <nav class="navbar navbar-expand-md fixed-top" id="mainNav">
+    <img class="navbar-brand text-uppercase click" src="../assets/images/ArabRest_logo.jpg"
+      (click)="scrollToTarget('.scrollintro')" />
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+      data-target="#navbarMenuContent" aria-controls="navbarMenuContent" aria-expanded="false"
+      aria-label="Toggle navigation" id="menu-button">
+      <i class="bi bi-chevron-down"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenuContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link click" (click)="scrollToTarget('.scrollintro')" id="header-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link click" (click)="scrollToTarget('.scrollaboutus')" id="aboutus-link">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link click" (click)="scrollToTarget('.scrollmenu')" id="services-link">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link click" (click)="scrollToTarget('.scrollgallery')" id="services-link">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link click" (click)="scrollToTarget('.scrollcontactus')" id="career-link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</section>
+<section id="intro" class="scrollintro">
+  <div class="intro-container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-interval="2000" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/images/Mandhi_Wallpaper1.jpg" class="d-block mx-auto" width="600" height="700px" alt="">
+          <div class="carousel-caption d-md-block">
+            <h1 class="title">Welcome to <span class="introtexteffect">Arabian</span> Restaurant</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/Mandhi_4.jpg" class="d-block w-100 h-100 intro-img" alt="" loading="lazy">
+          <div class="carousel-caption">
+            <h1 class="title">Lamb Mandhi</h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/images/Mandhi_5.jpg" class="d-block w-100 h-100 intro-img" alt="" loading="lazy">
+          <div class="carousel-caption d-md-block">
+            <h1 class="title">Chicken Mandhi</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="main">
+  <section id="aboutus" class="scrollaboutus">
+    <div class="row">
+      <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-delay="100">
+        <img src="/assets/images/HotelPic_1.jpg" class="w-100 h-100" alt="">
+      </div>
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="textwrapper">
+          <div class="overlap">
+            <span class="texteffect">
+              Discover
+            </span>
+            <h2 class="sectiontitle">
+              About Us
+            </h2>
+            <p>
+              “The Arabian restaurant founded by Mr. Abdul Hameed at the year of 2015 in Tuticorin. This is the first
+              restaurant introduces Shawarma at Tuticorin city to fulfill the people hunger as a happiest moment. The
+              restaurant started with two menu items are as Shawarma and Grilled chicken.</p>
+            <p>Right from there, In 2016 with people support then the restaurant improvised with 10 members seated
+              facility.
+              Based on the people feedback the new menu items Briyani and Tandoori items are added. Along with that
+              Lunch
+              facility is also added up.</p>
+            <p>
+              In 2018 – The restaurant improved into Multi Cuisine Restaurant with 50 members seating capacity as part
+              of
+              people service.</p>
+            <p>
+              In 2021– Mandi introduced as part of new menu item in the Arabian Restaurant, at first time in Tuticorin.
+              For
+              people service the seating capacity is increased in to 100 members and Special family rooms are also added
+              to
+              make the delightful Lunch/Dinner.</p>
+            <p>
+              The Arabian Restaurants’ motto to make people taste buds are as the happier one always. The hospitality
+              for
+              the customer can be considered as a main goal of the Restaurant. Maintaining the High quality and taste of
+              a
+              food is the vision of Arabian Restaurant in upcoming years.</p>
+            <p>
+              Take away facility available without set up for any minimum order amount.
+              Happy to serve you better always with delicious food at Ontime!!
+              “</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="menu" class="scrollmenu">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <span class="texteffect">Discover</span>
+          <h2 class="sectiontitle">
+            Our Menu
+          </h2>
+          <p>
+            The Arabian Restaurants’ motto to make people taste buds are as the happier one always. The hospitality
+            for
+            the customer can be considered as a main goal of the Restaurant. Maintaining the High quality and taste of
+            a
+            food is the vision of Arabian Restaurant in upcoming years.
+          </p>
+          <a routerLink="menu" class="btn">View Full Menu</a>
+        </div>
+
+        <div class="col-lg-6 col-md-6">
+          <div class="row d-flex">
+            <div class="col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+              <img src="../assets/images/Food_1.jpg" class="menuimg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 mt-3 mb-3" data-aos="fade-up" data-aos-delay="150">
+              <img src="../assets/images/Food_10.jpg" class="menuimg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="200">
+              <img src="../assets/images/Food_13.jpg" class="menuimg" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 mt-3" data-aos="fade-up" data-aos-delay="250">
+              <img src="../assets/images/Food_16_shawerma_spl item.jpg" class="menuimg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" class="scrollgallery">
+    <div class="container-fluid">
+      <h2 class="sectiontitle">
+        Gallery
+      </h2>
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg1"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="150">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg2"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg3"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg4"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg5"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg6"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg7"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
+          <div class="imgalign">
+            <div class="galleryimgbefore galleryimg8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contactus" class="scrollcontactus">
+    <div class="container">
+      <h2 class="sectiontitle">
+        Contact Us
+      </h2>
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-4 d-flex">
+          <i class="bi bi-telephone d-block"></i>
+          <div class="text">
+            <h5>For Orders Please call US<br /> (Door Delivery Available)</h5>
+            <p>Phone: <a href="tel:0461 4001300">0461 4001300</a>,<br />
+              Mobile: <a href="tel:82204 71233">82204 71233</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <i class="bi bi-geo-alt" style="width: 40px;"></i>
+          <div class="text">
+            <h5>Address</h5>
+            <p>Mr.Abdhul Hameed<br />
+              72, South New Street,<br />
+              Thoothukudi,<br />
+              Tamil Nadu - 628002 .</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex">
+          <i class="bi bi-clock" style="width: 40px;"></i>
+          <div class="text">
+            <h5>
+              Timing
+            </h5>
+            <p>
+              All day<br />
+              12:30pm–4:30pm & 6pm–11pm
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="googlemap">
+    <div class="container-fluid">
+      <!-- <h2 class="sectiontitle">Locate Us</h2> -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="locationbox">
+            <h4>
+              Location
+            </h4>
+            <p>
+              Mr.Abdhul Hameed<br />
+              72, South New Street,<br />
+              Thoothukudi,<br />
+              Tamil Nadu - 628002 .
+            </p>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.806778375986!2d78.14830260000001!3d8.804215800000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef98ef349739%3A0x15955beec6a3be48!2sArabian%20Restaurant!5e0!3m2!1sen!2sin!4v1638172727708!5m2!1sen!2sin"
+              width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <img src="../assets/images/ArabRest_logo.jpg" class="mb-3" alt="">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+
+            <h2><span class="texteffect">Arabian</span>Restaurant</h2>
+            <p>“The Arabian restaurant founded by Mr. Abdul Hameed at the year of 2015 in Tuticorin. This is the first
+              restaurant introduces Shawarma at Tuticorin city to fulfill the people hunger as a happiest moment. The
+              restaurant started with two menu items are as Shawarma and Grilled chicken.</p>
+            <p class="socialpara">
+              Follow Us On
+            </p>
+            <p>
+              <a href="https://wa.me/8220471233"><i class="bi bi-whatsapp socialicon"></i></a>
+              <a href="#"><i class="bi bi-facebook socialicon"></i></a>
+              <a href="#"><i class="bi bi-twitter socialicon"></i></a>
+              <a href="#"><i class="bi bi-instagram socialicon"></i></a>
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h4>
+              Links
+            </h4>
+            <ul>
+              <li class="click" (click)="scrollToTarget('.scrollintro')">Home</li>
+              <li class="click" (click)="scrollToTarget('.scrollaboutus')">About us</li>
+              <li class="click" (click)="scrollToTarget('.scrollmenu')">Menu</li>
+              <li class="click" (click)="scrollToTarget('.scrollgallery')">Gallery</li>
+              <li class="click" (click)="scrollToTarget('.scrollcontactus')">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h4>
+              Contact Us
+            </h4>
+            <ul>
+              <li><span class="iconcontainer"><i class="bi bi-map mr-2"></i></span>Mr.Abdhul Hameed<br />
+                72, South New Street,<br />
+                Thoothukudi,<br />
+                Tamil Nadu - 628002 .</li>
+              <li><span class="iconcontainer"><i class="bi bi-telephone"></i></span><a href="tel:04614001300">0461
+                  4001300</a><br /><a href="tel:8220471233">82204 71233</a></li>
+              <li><span class="iconcontainer"><i class="bi bi-send"></i></span>umarabdallah123@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="back-to-top click" (click)="scrollToTarget('.scrollintro')" [ngClass]="{'show-scrollTop': windowScrolled}">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+
+
+
+</section>

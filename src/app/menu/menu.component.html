@@ -1,0 +1,381 @@
+<section class="main">
+    <section id="menu">
+        <div class="container">
+            <h2 class="text-center text-white py-4">menu</h2>
+            <a href="../../assets/menu/ArabianRestaurant.pdf" download class="btn">Download Our Menu</a>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>
+                        Arabian Hot Flame
+                    </h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of starter; let i = index">
+
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>
+                        Non-veg Soup
+                    </h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of nonvegsoup; let i = index">
+
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+
+                            <h3>veg soup</h3>
+                            <tr *ngFor="let s of vegsoup; let i = index">
+
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>
+                        Briyani
+                    </h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of briyani; let i = index">
+
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Seafood gravy</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of seafoodgravy; let i = index">
+
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Veg gravy</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of veggravy; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Non Veg gravy</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of nonveggravy; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Non Veg Starters</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of nonvegstarters; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Veg Starters</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of vegstarters; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Seafood Starters</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of seafoodstarters; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h2>Arabian Mandhi</h2>
+                    <h3>Chicken Mandhi</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of chickenmandhi; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Mutton Mandhi</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of muttonmandhi; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Shawai Grill Mandhi</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of shawaigrillmandhi; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Indian Breads</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of indianbreads; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Indian Gravy (veg)</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of indiangravy; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Indian Non Veg Gravy</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of indiannonveggravy; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>tandoori</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of tandoori; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>veg Rice</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of vegrice; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Non Veg Rice</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of nonvegrice; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Veg Noodles</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of vegnoodles; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Non Veg Noodles</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of nonvegnoodles; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Egg Varieties</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of eggvarieties; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>fresh Juice</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of freshjuice; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Milk Shake</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of milkshake; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Milk Shake with icecream</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of milkshakewithicecream; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>icecream</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of icecream; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Hot</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of hot; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Crushers</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of crushers; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Sharjah</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of sharjah; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Lassi</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of lassi; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3>Special Shakes</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of specialshakes; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

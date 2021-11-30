@@ -1,0 +1,56 @@
+{
+    "menuList": [
+        {
+            "name": "shawarma",
+            "price": "90"
+        },
+        {
+            "name": "shawarma",
+            "price": "90"
+        },
+        {
+            "name": "shawarma",
+            "price": "90"
+        },
+        {
+            "name": "shawarma",
+            "price": "90"
+        },
+        {
+            "soup": "Chicken Clear Soup",
+            "soupprice": "60"
+        },
+        {
+            "soup": "Sweet Corn Chicken Soup",
+            "soupprice": "70"
+        },
+        {
+            "soup": "Hot & Sour Chicken Soup",
+            "soupprice": "80"
+        },
+        {
+            "soup": "Chicken manchow Soup",
+            "soupprice": "80"
+        },
+        {
+            "soup": "Chicken Pepper Soup",
+            "soupprice": "80"
+        },
+        {
+            "soup": "Cream of Chicken Soup",
+            "soupprice": "90"
+        },
+        {
+            "soup": "mutton Soup (Bone)",
+            "soupprice": "90"
+        },
+        {
+            "soup": "Hot Sour mutton Soup",
+            "soupprice": "100"
+        },
+        {
+            "soup": "Mutton Pepper Soup",
+            "soupprice": "100"
+        }
+    ]
+}

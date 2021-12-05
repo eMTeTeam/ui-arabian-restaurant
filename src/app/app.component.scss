@@ -1,10 +1,11 @@
+@import "../color.scss";
 .navbar {
   background-color: transparent;
   padding: 0 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .navbar-shrink {  
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: $primary-color !important;
 }
 #mainNav {
   -webkit-transition: all 0.5s ease;
@@ -23,7 +24,7 @@
   color: #fff;
 }
 .nav-item:hover {
-  color: #c49b63;
+  color: #000;
 }
 .navbar-nav {
   padding-right: 20px;
@@ -44,13 +45,7 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
-.main {
-  font-family: "poppins",arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 1.8;
-  color: gray;
-}
+
 // <---------------------intro style-------------------->
 #intro {
     height: 100vh;
@@ -65,7 +60,7 @@
     }
     #intro .title {
       color: white;
-      font-size: 50px;
+      font-size: 40px;
       line-height: 95px;
       font-weight: 400;      
     }
@@ -82,15 +77,23 @@
        }
      }
      @media (max-width: 575px) {
-       #intro .title, .introtexteffect{
+       #intro .title {
          font-size: 28px;
          line-height: 1.2;
-       }
+       }     
+     .introtexteffect {
+       font-size: 35px;
+     }     
+     .imgshrink {
+       width: 450px;
+       background-position: center;
      }
+    }
     #intro .introtexteffect {
       color: #c49b63;
       font-family: "great vibes", sans-serif;
-      
+      font-size: 60px;
+      font-weight: 600;
     }
   
     #intro .carousel,
@@ -104,10 +107,10 @@
       bottom: 0;
     }
     
-    #intro .carousel-item {
+    #intro .carousel-item, .imagealign {
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat;      
     }
     
     #intro .carousel-item::before {
@@ -129,9 +132,41 @@
         width: 60%;
       }
     }
+    #intro .callnow {
+      border: 1px solid #c49b63;
+      border-radius: 0;
+      padding: 1em 1.5em;
+      background: #c49b63;      
+      color: #000;
+    }
+    #intro .callnow:hover {
+      background: transparent;
+      color: #c49b63;
+    }
+    #intro a {
+      border: 1px solid #fff;
+      border-radius: 0;
+      padding: 1em 1.5em;
+      background: transparent;      
+      color: #fff;
+      margin-top: 2%;
+      margin-right: 2%;
+      
+    }
+    #intro a:hover {
+      background: #c49b63;
+      color: #000;
+      border-color: #c49b63;
+    }
+    #intro a:active {
+      outline: 0;
+    }
     
     .carousel-caption {
       bottom: 38vh;      
+    }
+    .introcaption {
+      bottom: 35vh;
     }
     
     #intro .intro-img {      
@@ -140,11 +175,15 @@
     }
     // <---------------------intro style-------------------->
     .main {
-      background: url(../assets/images/bg2.webp) no-repeat fixed;
+      background: url(../assets/images/bg2.webp) no-repeat fixed;      
       background-size: cover;
       background-position: center;
       overflow: hidden;
-
+      font-family: "poppins",arial, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #D3D3D3;
     }
   .texteffect {
     font-family: "great vibes", sans-serif;
@@ -249,10 +288,10 @@
   }
   #contactus {
     padding: 3% 0;
-    background: #c49b63;
+    background: #000;
   }
   #contactus h2 {
-    color: #000;
+    color: #fff;
     text-align: center;
     margin-bottom: 3%;
   }
@@ -260,17 +299,17 @@
     width: calc(100% - 40px);
   }
   #contactus i {
-    color: #000;
+    color: #fff;
     font-size: 20px;
     display: table-cell;
     width: 40px;
   }
   #contactus h5 {
     font-weight: 800;
-    color: #000;  
+    color: #fff;  
   }
   #contactus p {
-    color: #000;
+    color: #c49b63;
     font-weight: 400 !important;
   }
   #contactus a {    
@@ -292,12 +331,12 @@
     width: 300px;
     padding: 50px 30px;
     text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
+    color: #c49b63;
+    background-color: rgba(0, 0, 0, 0.9);
   }
   #googlemap h4 {    
     font-weight: 700;
-    color: #c49b63;
+    color: #fff;
   }
   #googlemap h2 {
     text-align: center;    
@@ -332,7 +371,7 @@
     padding-bottom: 40px;
   }
   .footer p {
-    color: #9b9b9b;
+    color: #D3D3D3;
   }
   .footer ul, li {
     list-style: none;
@@ -340,7 +379,7 @@
     padding: 0;
   }
   .footer ul {
-    color: #9b9b9b;
+    color: #D3D3D3;
     margin: 15px 0;
   }
   .footer li {

@@ -13,7 +13,9 @@ export class AppComponent {
   title = 'arabianRestaurant';
   ariaExpanded: boolean = false;
   windowScrolled: boolean = false;
-  slidesStore: Array<any> = [];
+  slidesStore1: Array<any> = [];
+  slidesStore2: Array<any> = [];
+  slidesStore3: Array<any> = [];
 
   ngOnInit() {
     AOS.init({ duration: 1000, once: true });
@@ -61,7 +63,7 @@ export class AppComponent {
     dots: false,
     center: true,    
     navSpeed: 500,
-    margin: 5,
+    margin: 5,    
     autoplay: true,
     responsive: {
       0: {
@@ -81,29 +83,32 @@ export class AppComponent {
   }
 
   owlcaro = () => {
-    this.slidesStore = [      
-      { src: "../assets/carousel/Food_1.jpg" },
-      { src: "../assets/carousel/Food_2.jpg" },
+    this.slidesStore1 = [
       { src: "../assets/carousel/ArabRest_logo.jpg" },
-      { src: "../assets/carousel/BuketBriyani.jpg" },
-      { src: "../assets/carousel/Food_4.jpg" },      
-      { src: "../assets/carousel/Food_6.jpg" },
-      { src: "../assets/carousel/Food_8.jpg" },
-      { src: "../assets/carousel/Food_9.jpg" },      
-      { src: "../assets/carousel/Food_11.jpg" },
-      { src: "../assets/carousel/Food_13.jpg" },      
-      { src: "../assets/carousel/Food_15.jpg" },
-      { src: "../assets/carousel/Food_16_shawerma_spl_item.jpg" },
       { src: "../assets/carousel/HotelPic_1.jpg" },
       { src: "../assets/carousel/HotelPic_3.jpg" },
       { src: "../assets/carousel/HotelPic_6.jpg" },
       { src: "../assets/carousel/HotelPic_7.jpg" },
+      { src: "../assets/carousel/Menu_Front Page.jpg" }      
+    ];
+    this.slidesStore2 = [
+      { src: "../assets/carousel/BuketBriyani.jpg" },
       { src: "../assets/carousel/Mandhi_1.jpg" },
       { src: "../assets/carousel/Mandhi_2.jpg" },
       { src: "../assets/carousel/Mandhi_3.jpg" },
       { src: "../assets/carousel/Mandhi_4.jpg" },
-      { src: "../assets/carousel/Mandhi_5.jpg" },
-      { src: "../assets/carousel/Menu_Front Page.jpg" }      
+      { src: "../assets/carousel/Mandhi_5.jpg" }
+    ];
+    this.slidesStore3 = [
+      { src: "../assets/carousel/Food_8.jpg" },
+      { src: "../assets/carousel/Food_16_shawerma_spl_item.jpg" },
+      { src: "../assets/carousel/Food_1.jpg" },
+      { src: "../assets/carousel/Food_2.jpg" },
+      { src: "../assets/carousel/Food_4.jpg" },      
+      { src: "../assets/carousel/Food_6.jpg" },      
+      { src: "../assets/carousel/Food_9.jpg" },      
+      { src: "../assets/carousel/Food_11.jpg" },
+      { src: "../assets/carousel/Food_13.jpg" }      
     ];
   }
 }

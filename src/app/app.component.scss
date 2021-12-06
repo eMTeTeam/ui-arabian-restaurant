@@ -87,6 +87,7 @@
      .imgshrink {
        width: 450px;
        background-position: center;
+       background-color: turquoise;
      }
     }
     #intro .introtexteffect {
@@ -106,17 +107,19 @@
       left: 0;
       bottom: 0;
     }
-    
+    .bgb {
+      background-color: #000;
+    }
     #intro .carousel-item, .imagealign {
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;      
+      background-repeat: repeat;      
     }
     
-    #intro .carousel-item::before {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.4);
-    }  
+    // #intro .carousel-item::before {
+    //   content: "";
+    //   background-color: rgba(0, 0, 0, 1);
+    // }  
     
     #intro .container {
       text-align: center;
@@ -289,6 +292,33 @@
   #contactus {
     padding: 3% 0;
     background: #000;
+  }
+  #contactus .callnow {
+    border: 1px solid #c49b63;
+    border-radius: 0;
+    padding: 1em 1.5em;
+    background: #c49b63;      
+    color: #000;
+  }
+  // #contactus .callnow:hover {
+  //   background: transparent;
+  //   color: #c49b63;
+  // }
+  #contactus .callnow {
+    border: 1px solid #c49b63;
+    border-radius: 0;
+    padding: 10px 15px;
+    background: #c49b63;      
+    color: #fff;    
+    margin-right: 2%;    
+  }
+  #contactus .callnow:hover {
+    background: transparent;
+    color: #fff;
+    border-color: #c49b63;
+  }
+  #contactus a:active {
+    outline: 0;
   }
   #contactus h2 {
     color: #fff;

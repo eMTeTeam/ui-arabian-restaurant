@@ -26,7 +26,6 @@
         </li>
       </ul>
     </div>
-
   </nav>
 </section>
 <section id="intro" class="scrollintro">
@@ -36,13 +35,20 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets/images/Mandhi_Wallpaper1.jpg" class="d-block mx-auto imgshrink" height="100%" alt="">
+          <img src="../assets/images/bg16.jpg" class="d-block w-100 h-100 intro-img" height="100%" alt="">
           <div class="carousel-caption introcaption d-md-block">
             <h1 class="title">WELCOME TO <span class="introtexteffect">Arabian</span> RESTAURANT</h1>
             <a href="tel:8220471233" class="btn callnow">Call Now</a><a routerLink="menu" class="btn">View Menu</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/images/Mandhi_Wallpaper1.jpg" class="d-block mx-auto imgshrink" height="100%" alt="">
+          <div class="carousel-caption d-md-block">
+            <h1 class="title">OUR NEW INTRODUCTION</h1>            
           </div>
         </div>
         <div class="carousel-item">
@@ -152,57 +158,13 @@
       <h2 class="sectiontitle">
         Gallery
       </h2>
-        <owl-carousel-o [options]="customOptions">    
-          <ng-container  *ngFor="let slide of slidesStore">
-            <ng-template style="height: 100%;" carouselSlide>
-              <img [src]="slide.src" class="imagealign h-100">
-            </ng-template>
-          </ng-container>
-      
-        </owl-carousel-o>     
-      
-      <!-- <div class="row no-gutters">
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="100">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg1"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="150">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg2"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="200">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg3"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg4"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg5"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg6"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg7"></div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-right" data-aos-delay="250">
-          <div class="imgalign">
-            <div class="galleryimgbefore galleryimg8"></div>
-          </div>
-        </div>
-      </div> -->
+      <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let slide of slidesStore">
+          <ng-template style="height: 100%;" carouselSlide>
+            <img [src]="slide.src" class="imagealign h-100">
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
     </div>
   </section>
   <section id="contactus" class="scrollcontactus">
@@ -211,8 +173,8 @@
         Contact Us
       </h2>
       <div class="row" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-3 col-md-6 d-flex">          
-          <i class="bi bi-telephone d-block"></i>          
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone d-block"></i>
           <div class="text">
             <h5>For Orders Please call US<br /> (Door Delivery Available)</h5>
             <p>Phone: <a href="tel:0461 4001300">0461 4001300</a>,<br />
@@ -229,8 +191,8 @@
               Tamil Nadu - 628002 .</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 d-flex">        
-          <i class="bi bi-clock" style="width: 40px;"></i>        
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock" style="width: 40px;"></i>
           <div class="text">
             <h5>
               Timing
@@ -256,10 +218,8 @@
       </div>
     </div>
   </section>
-
   <section id="googlemap">
     <div class="container-fluid">
-      <!-- <h2 class="sectiontitle">Locate Us</h2> -->
       <div class="row">
         <div class="col-lg-12">
           <div class="locationbox">
@@ -281,41 +241,17 @@
         </div>
       </div>
     </div>
-
   </section>
-
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
         <img src="../assets/images/ArabRest_logo.jpg" class="mb-3" alt="">
-        <div class="row">
+        <div class="row justify-content-between">
           <div class="col-lg-4 col-md-4">
-
             <h2><span class="texteffect">Arabian</span>Restaurant</h2>
             <p>“The Arabian restaurant founded by Mr. Abdul Hameed at the year of 2015 in Tuticorin. This is the first
               restaurant introduces Shawarma at Tuticorin city to fulfill the people hunger as a happiest moment. The
               restaurant started with two menu items are as Shawarma and Grilled chicken.</p>
-            <p class="socialpara">
-              Follow Us On
-            </p>
-            <p>
-              <a href="https://wa.me/8220471233"><i class="bi bi-whatsapp socialicon"></i></a>
-              <a href="https://www.facebook.com/ArabianrestaurantTn69/"><i class="bi bi-facebook socialicon"></i></a>
-              <a href="#"><i class="bi bi-twitter socialicon"></i></a>
-              <a href="https://instagram.com/arabianrestaurant2015?utm_medium=copy_link"><i class="bi bi-instagram socialicon"></i></a>
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <h4>
-              Links
-            </h4>
-            <ul>
-              <li class="click" (click)="scrollToTarget('.scrollintro')">Home</li>
-              <li class="click" (click)="scrollToTarget('.scrollaboutus')">About us</li>
-              <li class="click" (click)="scrollToTarget('.scrollmenu')">Menu</li>
-              <li class="click" (click)="scrollToTarget('.scrollgallery')">Gallery</li>
-              <li class="click" (click)="scrollToTarget('.scrollcontactus')">Contact Us</li>
-            </ul>
           </div>
           <div class="col-lg-4 col-md-4">
             <h4>

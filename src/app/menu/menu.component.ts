@@ -12,6 +12,8 @@ export class MenuComponent implements OnInit {
   public menuData:any
   public soupData:any
 
+  
+
   constructor(private router: Router)
   {
     this.menuData=menuList.menuList;
@@ -366,11 +368,11 @@ export class MenuComponent implements OnInit {
       {title: 'French Frys', price: '70.00' }
     ];
     this.hot = [
-      {title: 'Tea', price: '190.00' },
-      {title: 'Lemon Tea', price: '190.00' },
-      {title: 'mint Te', price: '200.00' },
-      {title: 'Spl Sulaimani', price: '200.00' },
-      {title: 'Coffee', price: '180.00' }      
+      {title: 'Tea', price: '20.00' },
+      {title: 'Lemon Tea', price: '25.00' },
+      {title: 'mint Te', price: '25.00' },
+      {title: 'Spl Sulaimani', price: '25.00' },
+      {title: 'Coffee', price: '30.00' }      
     ];
     this.crushers = [
       {title: 'Cool Blue', price: '90.00' },

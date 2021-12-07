@@ -1,11 +1,11 @@
-@import "../color.scss";
+
 .navbar {
   background-color: transparent;
   padding: 0 1rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .navbar-shrink {  
-    background-color: $primary-color !important;
+    background-color: #c49b63 !important;
 }
 #mainNav {
   -webkit-transition: all 0.5s ease;
@@ -84,11 +84,12 @@
      .introtexteffect {
        font-size: 35px;
      }     
-     .imgshrink {
-       width: 450px;
-       background-position: center;
-       background-color: turquoise;
+     .introimage {
+      width: 100%;
      }
+     #intro .intro-img {           
+      object-fit: unset !important;
+    }
     }
     #intro .introtexteffect {
       color: #c49b63;
@@ -146,15 +147,14 @@
       background: transparent;
       color: #c49b63;
     }
+    
     #intro a {
       border: 1px solid #fff;
       border-radius: 0;
       padding: 1em 1.5em;
       background: transparent;      
-      color: #fff;
-      
-      margin-right: 2%;
-      
+      color: #fff;      
+      margin-right: 2%;      
     }
     #intro a:hover {
       background: #c49b63;
@@ -164,7 +164,7 @@
     #intro a:active {
       outline: 0;
     }
-    
+        
     .carousel-caption {
       bottom: 38vh;      
     }

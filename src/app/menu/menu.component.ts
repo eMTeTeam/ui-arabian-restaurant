@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import  menuList from './menu.json'
-
+import jump from 'jump.js';
 
 @Component({
   selector: 'app-menu',
@@ -16,8 +15,16 @@ export class MenuComponent implements OnInit {
 
   constructor(private router: Router)
   {
-    this.menuData=menuList.menuList;
-    this.loadStarter(); 
+    // setTimeout(() => {
+    //   jump('scrolltop');
+    // }, 500);
+
+     this.loadStarter();
+    // let offset = -5;
+    // jump('.scrolltop', {
+    //   offset: offset
+    // });
+
    }
 
    starter: Array<any> = [];
@@ -52,6 +59,7 @@ export class MenuComponent implements OnInit {
    sharjah: Array<any> = [];
    lassi: Array<any> = [];
    specialshakes: Array<any> = [];
+   specialicecream: Array<any> = [];
    
    
    loadStarter = () => {
@@ -362,10 +370,16 @@ export class MenuComponent implements OnInit {
       {title: 'Arabian SPL Falooda', price: '190.00' }      
     ];
     this.extratouch = [
-      {title: 'Kuffus', price: '10.00' },
+      {title: 'Kuffus (1 piece)', price: '10.00' },
       {title: 'Extra mayonnaise', price: '25.00' },
       {title: 'Green Salad', price: '30.00' },
       {title: 'French Frys', price: '70.00' }
+    ];
+    this.specialicecream = [
+      {title: 'Gad Bad', price: '107.00' },
+      {title: 'Dhilkhus', price: '180.00' },
+      {title: 'Choco Coconut', price: '150.00' },
+      {title: 'Chocodad', price: '140.00' }
     ];
     this.hot = [
       {title: 'Tea', price: '20.00' },

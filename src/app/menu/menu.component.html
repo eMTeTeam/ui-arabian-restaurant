@@ -1,7 +1,7 @@
 <section class="main">
-    <section id="menu">
+    <section id="menu1">
         <div class="container">
-            <h2 class="text-center text-white py-4">menu</h2>
+            <h2 class="sectiontitle text-center p-3">Menu</h2>
             <a href="../../assets/menu/ArabianRestaurant.pdf" download class="btn">Download Our Menu</a>
             <div class="row bg1">
                 <div class="col-md-6">
@@ -316,6 +316,26 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="col-md-6">
+                    <h3>Extra Touch</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of extratouch; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3>Arabian Special Ice Cream</h3>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let s of specialicecream; let i = index">
+                                <td class="line">{{ s.title }}</td>
+                                <td>{{ s.price }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
                 <div class="col-md-6">
                     <h3>Hot</h3>
                     <table class="table">

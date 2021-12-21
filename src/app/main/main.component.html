@@ -1,1 +1,78 @@
-<router-outlet></router-outlet>
+<section class="nav_bar">
+    <nav class="navbar navbar-expand-md fixed-top" id="mainNav"><a class="navbar-brand" routerLink="home">
+        <img class="navbar-brand text-uppercase click" src="../assets/images/ArabRest_logo.jpg"
+            (click)="scrollToTarget('.nav_bar')" /></a>
+            <a class="navbar-brand restitle">Arabian Restaurant</a>
+
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarMenuContent" aria-controls="navbarMenuContent" aria-expanded="false"
+            aria-label="Toggle navigation" id="menu-button">
+            <i class="bi bi-chevron-down"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenuContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a routerLink="home" class="nav-link click" (click)="scrollToTarget('.nav_bar')"
+                        id="header-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="about" class="nav-link click" (click)="scrollToTarget('.nav_bar')"
+                        id="aboutus-link">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="menucontent" class="nav-link click" (click)="scrollToTarget('.nav_bar')"
+                        id="services-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="gallery" class="nav-link click" (click)="scrollToTarget('.nav_bar')"
+                        id="services-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="contact" class="nav-link click" (click)="scrollToTarget('.nav_bar')"
+                        id="career-link">Contact
+                        Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+<section class="main">
+    <router-outlet></router-outlet>
+</section>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <img src="../assets/images/ArabRest_logo.jpg" class="mb-3" alt="">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-4">
+                    <h2><span class="texteffect">Arabian</span>Restaurant</h2>
+                    <p>“The Arabian restaurant founded by Mr. Abdul Hameed at the year of 2015 in Tuticorin. This is
+                        the first
+                        restaurant introduces Shawarma at Tuticorin city to fulfill the people hunger as a happiest
+                        moment. The
+                        restaurant started with two menu items are as Shawarma and Grilled chicken.</p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>
+                        Contact Us
+                    </h4>
+                    <ul>
+                        <li><span class="iconcontainer"><i class="bi bi-map mr-2"></i></span>Mr.Abdhul Hameed<br />
+                            72, South New Street,<br />
+                            Thoothukudi,<br />
+                            Tamil Nadu - 628002 .</li>
+                        <li><span class="iconcontainer"><i class="bi bi-telephone"></i></span><a
+                                href="tel:04614001300">0461
+                                4001300</a><br /><a href="tel:8220471233">+91 82204 71233</a></li>
+                        <li><span class="iconcontainer"><i
+                                    class="bi bi-send"></i></span>umarabdallah123@gmail.com<br /><a
+                                href="http://www.arabianrestauranttuticorin.in/"
+                                target="_blank">www.arabianrestauranttuticorin.in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
